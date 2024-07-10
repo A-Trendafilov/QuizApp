@@ -3,7 +3,7 @@ package com.example.QuizApp.model;
 import lombok.Data;
 
 @Data
-public class QuiestionWrapper {
+public class QuestionWrapper {
 
     private Integer id;
     private String questionTitle;
@@ -12,7 +12,7 @@ public class QuiestionWrapper {
     private String option3;
     private String option4;
 
-    public QuiestionWrapper(Integer id, String questionTitle, String option1, String option2, String option3, String option4) {
+    public QuestionWrapper(Integer id, String questionTitle, String option1, String option2, String option3, String option4) {
         this.id = id;
         this.questionTitle = questionTitle;
         this.option1 = option1;
