@@ -27,8 +27,8 @@ public class QuizController {
         return quizService.getQuizQuestions(quizId);
     }
 
-    @PostMapping("submit/{id}")
-    public ResponseEntity<Integer> submitQuiz(@PathVariable Integer id, @RequestBody List<Response> response) {
-        return quizService.calculateResult(id, response);
+    @PostMapping("submit/{quizId}")
+    public ResponseEntity<Integer> submitQuiz(@PathVariable Integer quizId, @RequestBody List<Response> response) {
+        return quizService.calculateResult(quizId, response);
     }
 }
